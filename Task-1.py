@@ -1,10 +1,12 @@
 def factorial(n):
-    n_fact = 1
-    for i in range(1,n+1):
-        n_fact = n_fact*i
-    print(f"factorial of {n} is : {n_fact}")
-    return n_fact    
+    b = n
+    if n == 1 or n == 0:
+        return 1
+    else:
+        n = n*factorial(n-1)   
+    return n    
 
 a = int(input("enter a number : "))
 
-factorial(a)
+print(f"factorial of {a} is {factorial(a)}")
+

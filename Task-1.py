@@ -1,5 +1,4 @@
 def factorial(n):
-    b = n
     if n == 0:
         return 1
     else:
@@ -9,5 +8,6 @@ def factorial(n):
 a = int(input("enter a number : "))
 
 print(f"factorial of {a} is {factorial(a)}")
+
 
 
